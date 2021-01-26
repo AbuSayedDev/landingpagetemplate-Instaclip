@@ -1,0 +1,400 @@
+
+/* Google font */
+@font-face{
+    src: url(../font/Gotham\ Bold.otf);
+    font-family: 'Gotham-Bold';
+}
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+    background-color: #e3e1e124;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: #222222;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+    line-height: 1.5;
+    color: #222222;
+    font-family: 'Gotham-Bold';
+    font-style: normal;
+}
+h2{
+    font-size: 32px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    font-style: normal;
+}
+h3{
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+p{
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+}
+
+/*=====================> Common css <=================== */
+.btn-secondary.focus, .btn-secondary:focus {
+    box-shadow: none;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+/*=====================> header-wrapper <=================== */
+.header-wrapper{
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+
+}
+.navbar-light .navbar-toggler {
+    color: rgb(255, 251, 251);
+    border-color: rgb(255, 255, 255);
+}
+
+/*-------------> top-heaber <------------- */
+.top-heaber{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    top: 15px;
+}
+
+.custom-navbar-brand{
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    line-height: 39px;
+    font-weight: 700;
+    color: #fff !important;
+}
+
+.custom-navbar .custom-navbar-nav .nav-item {
+    padding: 0px 30px !important;
+}
+.custom-navbar .navbar-nav .nav-link {
+    color: #fff !important;
+}
+.custom-navbar .custom-navbar-nav .login{
+    border: 1px solid #fff;
+    transition: 1s;
+    padding: 3px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.custom-navbar .custom-navbar-nav .login:hover{
+    border: 1px solid #fff0;
+    -webkit-transition: .2s all ease-in;
+    -o-transition: .2s all ease-in;
+    transition: .2s all ease-in;
+}
+
+
+/*-----------> banner-header <----------- */
+
+.custom-container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+.video-overlay-effect{
+    width: 100%;
+    height: auto;
+    padding: 200px 0;
+    position: relative;
+}
+
+.video-overlay-effect::after{
+    width: 100%;
+    height: 580px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.5);}
+
+.video-overlay-effect video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.banner-content{
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    top: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    vertical-align: middle;
+    }
+.banner-content h1{
+    color: #fff;
+    font-size: 42px;
+    font-style: italic;
+}
+.banner-content p{
+    font-size: 25px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+}
+
+
+/*=======================> payment-banner-wraper <==============================*/
+
+.payment-area, .instaClip-area{
+    border-top: 2px solid #00000038;
+    border-bottom: 2px solid #00000038;
+}
+
+
+/*=======================> ourhappy-creator-wrapper <==============================*/
+
+.ourhapp-creator-img img{
+    width: 160px;
+    height: 160px;
+    text-align: center;
+}
+.ourhappy-creator-fbgroup a{
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: #fff;
+    border: 1px solid #000;
+    color: #222222;
+    transition: 1s;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+.ourhappy-creator-fbgroup a:hover{
+    border: 1px solid #222222d6;
+    color: #fff;
+    text-decoration: none;
+    background-color: #222222d6;
+    -webkit-transition: .2s all ease-in;
+    -o-transition: .2s all ease-in;
+    transition: .2s all ease-in;
+}
+
+.ourhappy-creator-fbgroup a span{
+    margin-left: 10px;
+    font-size: 14px;
+    color: #0C86EE;
+}
+
+
+
+/*=======================> store-wrapper <==============================*/
+
+.story-item a:hover{
+    text-decoration: none;
+    color: #222222;
+}
+.story-item-img img{
+    width: 100%;
+    height: 250px;
+}
+.story-item .story-content{
+    border: 1px solid #00000038;
+}
+.story-content h4{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+.story-content span{
+    font-size: 13px;
+    line-height: 1.5;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+/*=======================> selling-wrapper <==============================*/
+.selling-item .selling-item-title h2{
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+
+/*=======================> pricing-card-wrapper <==============================*/
+.pricing-card-title h3{
+    letter-spacing: .6px;
+    color: #637381;
+}
+
+ .pricing-card-wrapper .pricing-card-item {
+    -webkit-box-shadow: 0 3px 11px 0 rgba(0,0,0,.16);
+    box-shadow: 0 3px 11px 0 rgba(0,0,0,.16);
+    min-height: 530px;
+}
+.pricing-card-wrapper .pricing-card-item .pricing-card-name-block {
+    background-color: #f5f7fa;
+    height: 270px;
+}
+.pricing-card-wrapper .pricing-card-item .pricing-card-name-block h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1.2px;
+    padding: 20px 0 10px 0;
+}
+.pricing-card-wrapper .pricing-card-item .pricing-card-name-block p{
+    font-size: 38px;
+    color: #509bf4;
+}
+.pricing-card-wrapper .pricing-card-item .pricing-card-name-block p span{
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    letter-spacing: .4px;
+    color: #000;
+}
+
+.pricing-card-wrapper .pricing-card-item .pricing-card-transaction-fee{
+    background-color: #637381;
+    padding: 10px 0;
+}
+.pricing-card-wrapper .pricing-card-item .pricing-card-transaction-fee p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    letter-spacing: .6px;
+    color: #fff;
+}
+
+.pricing-card-wrapper .pricing-card-item .pricing-card-description {
+    height: 140px;
+    padding-top: 15px;
+}
+.pricing-card-wrapper .pricing-card-item .pricing-card-description ul> li {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    letter-spacing: .5px;
+    margin-bottom: 5px;
+}
+.pricing-card-wrapper .pricing-card-item .pricing-card-description ul> li> img {
+    position: relative;
+    bottom: 1px;
+    margin-right: 2px;
+}
+
+.pricing-card-wrapper .pricing-card-item .pricing-card-cta-btn .custom-btn-secondary{
+    padding: 10px 55px;
+    background: none;
+    text-transform: initial;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .6px;
+    color: #1676e6;
+    border: 1px solid #1676e6;
+    border-radius: 5px;
+    -webkit-border-radius: 4px;
+    -webkit-transition: .2s all ease-in;
+    -o-transition: .2s all ease-in;
+    transition: .2s all ease-in;
+}
+.pricing-card-wrapper .pricing-card-item .pricing-card-cta-btn .custom-btn-secondary:hover{
+    background: #1676e6;
+    color: #fff;
+    -webkit-transition: .2s all ease-in;
+    -o-transition: .2s all ease-in;
+    transition: .2s all ease-in;
+}
+/*=======================> footer-wrapper <==============================*/
+.footer-wrapper{
+    width: 100%;
+    height: auto;
+    padding: 35px 0;
+    color: #fff;
+    background: #000;
+}
+.footer-menu ul{
+    display: flex;
+    justify-content: end;
+}
+.footer-menu ul>li{
+    float: left;
+    padding: 0 20px;
+}
+.footer-menu ul>li>a{
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+    .custom-navbar .custom-navbar-nav .nav-item {
+        padding: 0px 0px !important;
+    }
+    .custom-navbar .custom-navbar-nav .login{
+        border: 1px solid #fff0;
+        padding: 0px;
+    }
+    .video-overlay-effect::after{
+        height: 580px;}
+    .ourhappy-creator-fbgroup{
+        padding: 28px 0 0 0 !important;
+    }
+    .instaClip-wraper{
+        padding-top: 0px !important;
+    }
+
+    .copy-right{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 414px) {
+    h2 {
+        font-size: 24px;}
+    .payment-banner-wraper{}
+    .video-overlay-effect {
+        padding: 160px 0;
+    }
+    .video-overlay-effect::after{
+        height: 561px;}
+    .banner-content {
+        top: 0%}
+    .banner-content h1 {
+        font-size: 27px;}
+   .banner-content p {
+    font-size: 18px;
+    letter-spacing: 0;} 
+
+
+
+}
+
